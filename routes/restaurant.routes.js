@@ -3,13 +3,11 @@ const router = express.Router();
 const restaurantController = require("../controllers/restaurant.controller");
 const validate = require("../middlewares/index");
 
-// Add-Restaurant - post
+// Add-Restaurant - POST
 router.post("/restaurant", [validate.validateRequest] , restaurantController.createRestaurant );
 
-// // signin -post
-// router.put("/auth/reset-password", authController.resetPassword)
+// Get-All-Restaurant - GET
+router.get("/restaurant", restaurantController.getAllRestaurant)
 
-// // signin -post
-// router.post("/auth/signin", authController.signin)
 
 module.exports = router
