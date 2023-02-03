@@ -18,6 +18,7 @@ const createRestaurant = async (req, res) => {
         const newRestaurant = await restaurant.save();
         res.status(201).send({
             success: true,
+            message : "Succesfully Created Restaurant",
             newRestaurant
         });
     } catch (err) {
@@ -29,3 +30,7 @@ const createRestaurant = async (req, res) => {
     }
 };
 
+
+module.exports = {
+    createRestaurant,
+}

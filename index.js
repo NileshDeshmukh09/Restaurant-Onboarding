@@ -24,6 +24,10 @@ mongoose.connect(process.env.DB_URL, (err)=>{
     }
 });
 
+const restaurantRouter = require("./routes/restaurant.routes");
+
+app.use("/api/" , restaurantRouter );
+
 app.listen(process.env.PORT, () => {
     console.log(`Restraunt server has started on the port http://localhost:${ process.env.PORT }` );
 })
