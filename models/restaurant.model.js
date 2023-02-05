@@ -27,7 +27,6 @@ const RestaurantSchema = new mongoose.Schema({
 
     website : {
         type : String , 
-        default : "Hey , I'm there on Blogging",
     },
 
     phoneNumber: {
