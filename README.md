@@ -33,6 +33,12 @@ It has the APIs for
 - ` get-Restaurant ` : GET - ` https://restaurant-onboarding-server.vercel.app/api/restaurant `
 
 
+## Demo
+
+Insert gif or link to demo
+https://www.loom.com/share/60ce81ef1c7c489eaa430407d8f27ffb
+
+
 
 
 ## Thank-you  for checking Project
